@@ -35,7 +35,7 @@ except:
 
 #read
 
-sql = "SELECT * FROM EMPLOYEE  WHERE INCOME > '%d'" % (2100)
+sql = "SELECT * FROM EMPLOYEE  WHERE FIRST_NAME = '%s'" % ('Mac')
 try:
    cursor.execute(sql)
    results = cursor.fetchall()
